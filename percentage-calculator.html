@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calcultor</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #272c4c;
+        }
+
+        #maths {
+            margin-left: 15px;
+        }
+
+        #Hindi {
+            margin-left: 15px;
+        }
+
+        #Science {
+            margin-left: 5px;
+        }
+
+        #SST {
+            margin-left: 28px;
+        }
+
+        #English {
+            margin-left: 5px;
+        }
+
+        #Submit {
+            padding: 05px;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        span,
+        input {
+            color: #ffd900;
+        }
+
+        input {
+            padding: 7px;
+            background-color: #272c4c;
+            border-radius: 20px;
+        }
+
+        #maths:hover {
+            animation: change1 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01)
+        }
+
+        @keyframes change1 {
+            0% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            12.5% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+        }
+
+        #Science:hover {
+            animation: change2 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01)
+        }
+
+        @keyframes change2 {
+            0% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+
+            12.5% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+        }
+
+        #SST:hover {
+            animation: change3 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01)
+        }
+
+        @keyframes change3 {
+
+            0% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+
+            12.5% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+        }
+
+        #English:hover {
+            animation: change4 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01)
+        }
+
+        @keyframes change4 {
+            0% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            62.5% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+
+            87.5% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+
+
+            100% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+        }
+
+        #Hindi:hover {
+            animation: change5 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01);
+        }
+
+        @keyframes change5 {
+            0% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+
+            62.5% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+
+            100% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+        }
+
+        #Submit:hover {
+            animation: change6 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.2)
+        }
+
+        @keyframes change6 {
+            0% {
+                background: linear-gradient(to bottom, red, red, black);
+                transform: rotate(0);
+            }
+
+            12.5% {
+                background: linear-gradient(to bottom, orange, orange, black);
+                transform: rotate(45deg)
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+                transform: rotate(90deg);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+                transform: rotate(135deg);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+                transform: rotate(150deg);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+                transform: rotate(270deg);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, red, red, black);
+                transform: rotate(0deg);
+            }
+        }
+
+        input {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        input:hover {
+            color: #272c4c;
+        }
+
+        .names {
+            font-size: 25px;
+        }
+
+        #submit {
+            font-size: 30px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Calculate Your Percentage</H1><br><br>
+    <h3>Enter Your Marks </h3>
+    <br>
+    <p>
+        <span class="names" id="nmaths">Maths:</span> 
+        <input type="text" placeholder="Enter your Maths Marks" id="maths"
+            class="val"><br><br>
+        <span class="names" id="nscience">Science:</span> <input type="text" placeholder="Enter your Maths Marks"
+            id="Science" class="val"><br><br>
+        <span class="names" id="nsst">SST:</span> <input type="text" placeholder="Enter your Maths Marks" id="SST"
+            class="val"><br><br>
+        <span class="names" id="nenglish">English:</span> <input type="text" placeholder="Enter your Maths Marks"
+            id="English" class="val"><br><br>
+        <span class="names" id="nhindi">Hindi:</span> <input type="text" placeholder="Enter your Maths Marks" id="Hindi"
+            class="val"><br><br>
+        <br>
+        <input type="submit" name="Submit" id="Submit" onclick="submit()">
+    </p>
+    <br><br>
+    <h2>Your Percentage is:</h2><span id="result"></span>
+    <script>
+        function submit() {
+            var maths = parseFloat(document.getElementById("maths").value);
+            var Science = parseFloat(document.getElementById("Science").value);
+            var SST = parseFloat(document.getElementById("SST").value);
+            var Hindi = parseFloat(document.getElementById("Hindi").value);
+            var English = parseFloat(document.getElementById("English").value);
+
+            var total = maths + Science + SST + English + Hindi;
+
+            var percent = total / 4;
+            document.getElementById("result").innerHTML = percent + "%";
+        }
+    </script>
+</body>
+
+</html>

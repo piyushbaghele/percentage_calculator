@@ -1,0 +1,398 @@
+/* body{
+           
+            background-image:radial-gradient(blue,aqua,rgb(23, 99, 207));
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #maths {
+            margin-left: 15px;
+        }
+
+        #Hindi {
+            margin-left: 15px;
+        }
+
+        #Science {
+            margin-left: 5px;
+        }
+
+        #SST {
+            margin-left: 28px;
+        }
+
+        #English {
+            margin-left: 5px;
+        }
+
+        #Submit {
+            padding: 05px;
+        }
+
+
+
+        input{
+            background-color: rgb(6, 78, 141);
+            color: white;
+            padding: 7px; 
+        }
+
+        input:hover {
+            color: #272c4c;
+        }
+        
+        input {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+
+        #English:hover{
+            animation:change1 8s infinite;
+            box-shadow: 10px 10px 8px #001111;
+            transition: all 0.8s ease-in-out;
+            transform : scale(1.04);
+        }
+
+        @keyframes change1{
+            0%{
+background-image: conic-gradient(1deg,);
+            }
+        } */
+
+
+
+        /* helks,ndmc */
+
+
+        * {
+            padding: 0%;
+            margin: 0;
+        }
+
+        body {
+            background-image:radial-gradient(rgba(175, 4, 237, 0.411),rgb(7, 131, 232),rgb(143, 3, 237));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #272c4c;
+        }
+
+        #Maths {
+            margin-left: 20px;
+        }
+
+        #Hindi {
+            margin-left: 20px;
+        }
+
+        #Science {
+            margin-left: 20px;
+        }
+
+        #S_S_T {
+            margin-left: 20px;
+        }
+
+        #English {
+            margin-left: 20px;
+            margin-top:40px
+        }
+
+        #Submit {
+            padding: 05px;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        span,
+        input {
+            color: #ffd900;
+        }
+        h1{
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 7px;
+            background-color: #272c4c;
+            border-radius: 20px;
+        }
+
+        #Maths:hover {
+            animation: change1 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01)
+        }
+
+        @keyframes change1 {
+            0% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            12.5% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+        }
+
+        #Science:hover {
+            animation: change2 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01)
+        }
+
+        @keyframes change2 {
+            0% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+
+            12.5% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+        }
+
+        #S_S_T:hover {
+            animation: change3 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01)
+        }
+
+        @keyframes change3 {
+
+            0% {
+                background: linear-gradient(to bottom, #07055c, #071269, black);
+            }
+
+            12.5% {
+                background: linear-gradient(to bottom, #0dc9a9, #07fdb7, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+        }
+
+        #English:hover {
+            animation: change4 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01)
+        }
+
+        @keyframes change4 {
+            0% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            62.5% {
+                background: linear-gradient(to bottom, rgb(207, 7, 201), orange, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, #FFD700, #FFD700, black);
+            }
+
+            87.5% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+
+
+            100% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+        }
+
+        #Hindi:hover {
+            animation: change5 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.01);
+        }
+
+        @keyframes change5 {
+            0% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+
+            25% {
+                background: linear-gradient(to bottom, red, red, black);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, orange, orange, black);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, #49c318, #FFD700, black);
+            }
+
+            62.5% {
+                background: linear-gradient(to bottom, #BDE900, #BDE900, black);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, #7CFC00, #7CFC00, black);
+            }
+
+
+            100% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+            }
+        }
+
+        #Submit:hover {
+            
+            animation: change6 8s infinite;
+            box-shadow: 10px 10px 8px #000000;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.2)
+        }
+
+        @keyframes change6 {
+            0% {
+                background: linear-gradient(to bottom, red, red, black);
+                transform: rotate(0);
+            }
+
+            12.5% {
+                background: linear-gradient(to bottom, orange, orange, black);
+                transform: rotate(45deg)
+            }
+
+            25% {
+                background: linear-gradient(to bottom, #ff6a00eb, #FFD700, black);
+                transform: rotate(90deg);
+            }
+
+            37.5% {
+                background: linear-gradient(to bottom, #ffaf04, #bae011, black);
+                transform: rotate(135deg);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, hsl(191, 78%, 56%), #bdff7c, black);
+                transform: rotate(150deg);
+            }
+
+            75% {
+                background: linear-gradient(to bottom, #002fff, #002fff, black);
+                transform: rotate(270deg);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, rgb(235, 12, 109), rgb(212, 26, 241), black);
+                transform: rotate(0deg);
+            }
+        }
+
+        input {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        input:hover {
+            color: #272c4c;
+        }
+
+        .names {
+            font-size: 25px;
+        }
+
+        #submit {
+            font-size: 30px;
+            padding: 15px;
+        }
+
+        #submit1{
+            visibility: hidden;
+            width: 150px;
+        }
+
+        #hide1
+        {
+            visibility: hidden;
+        }
+
+        h2{
+margin-top: 15px;;
+        }
+
+        marquee{
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 10px;
+            margin-top: 5px;
+        }
