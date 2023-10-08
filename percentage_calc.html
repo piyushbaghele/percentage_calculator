@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage calculater</title>
+    <link rel="stylesheet" href="style1.css">
+    
+    
+
+</head>
+<body >
+    <h1>Calculate your percentage here !!!</h1>
+
+    <p>
+     <span class="names">English:</span><input id="English" type="text" placeholder="Enter your marks in English"/><br/><br/>
+     <span class="names">Hindi:</span><span id="hide1">hel</span><input id ="Hindi" type="text" placeholder="Enter your marks in Hindi"/><br/><br/>
+     <span class="names">S_S_T: </span><span id="hide1">h</span><input id ="S_S_T" type="text" placeholder="Enter your marks in S.S.T"/><br/><br/>
+     <span class="names">Science:<input id ="Science" type="text" placeholder="Enter your marks in Science"/><br/><br/>
+     <span class="names">Maths:</span><span id="hide1">hl</span><input id ="Maths" type="text" placeholder="Enter your marks in Maths"/><br/><br/>
+<br>
+
+<button type="submit" onclick="calculate" id="submit1" >submitm</button>
+     <input type="submit" name="Submit" id="Submit" style="border-radius: 45%;" onclick="calculate()">
+    </p>
+
+     <h2>Your Percentage is:</h2><span id ="result"></span>
+     <h2>Your Grade is:</h2><span id="grades"></span>
+
+    <script>
+        function calculate(){
+        var English = parseFloat(document.getElementById("English").value) ;
+        var Hindi = parseFloat(document.getElementById("Hindi").value);
+        var S_S_T = parseFloat(document.getElementById("S_S_T").value ); 
+        var Science = parseFloat(document.getElementById("Science").value) ; 
+        var Maths = parseFloat(document.getElementById("Maths").value) ; 
+  
+    
+         var total = English + Hindi + S_S_T + Science + Maths  ;
+         var percent = (total/400)*100;
+
+         document.getElementById("result").innerHTML = percent+"%";
+    grading(percent)
+         
+    }
+        function grading(x) {
+           
+            if (x >= 90) {
+                document.getElementById("grades").innerHTML = "A+ Outstanding performance.";
+            } else if (x >= 80) {
+                document.getElementById("grades").innerHTML = "A, Excellent.";
+            } else if (x >= 70) {
+                document.getElementById("grades").innerHTML = "B, Good.";
+            } else if (x >= 60) {
+                document.getElementById("grades").innerHTML = "C, Fair.";
+            } else if (x >= 50) {
+                document.getElementById("grades").innerHTML = "D, Needs improvement.";
+            } else {
+                document.getElementById("grades").innerHTML = "F, Fail.";
+            }
+        }
+    </script>
+
+    <marquee behavior="scroll" direction="right" height="50px" bgcolor="white" hspace="20%" >Exams and Grades are temporary but knowledge is permanent !!!!</marquee>
+</body>
+</html>
