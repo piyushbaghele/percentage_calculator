@@ -370,6 +370,7 @@ background-image: conic-gradient(1deg,);
 
         .names {
             font-size: 25px;
+                   margin-left:10px;
         }
 
         #submit {
